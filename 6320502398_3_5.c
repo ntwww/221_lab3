@@ -8,6 +8,7 @@ int main ()
     {
         if (x%i==0)
         {
+            x=x/i;
             s++;
         }
         else
