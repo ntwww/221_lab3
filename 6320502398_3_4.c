@@ -1,10 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,x;
     scanf("%d" ,&n);
     if(n==1||n==0)
-
         printf("%d",n);
     while(n>1)
     {
