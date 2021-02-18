@@ -1,16 +1,28 @@
 #include<Stdio.h>
 int main()
 {
-    int n,a;
+    int n,a=2;
     scanf("%d",&n);
-    for (a=2; n!=0; a++)
+    if(n==1)
+        printf("%d\n%d",n,0);
+    else
     {
-        while (n%a==0)
+
+        while (1)
         {
-            printf("%d\n",a);
-            n/=a;
+            if(n%a==0)
+            {
+                printf("%d\n",a);
+                n/=a;
+            }
+            else
+                a++;
             if (n==1)
-                printf("0");
+            {
+             printf("0");
+                break;
+            }
         }
+
     }
 }
